@@ -16,6 +16,8 @@
 			<li><a target="_blank" href="Our Contact!.html">Kontak kami</a></li>
 		</ul>
 	</nav>
+
+	<input type="search" placeholder="Cari Barang">
 </header>
 
 <aside>
@@ -59,14 +61,49 @@
 	<h2>Kontak kami!</h2>
 		<form>
 			<div>
-				<label for="Nama">Nama :</label><input type="text" placeholder="Masukkan nama disini" id="Nama">
+				<label for="Nama">Nama :</label><input type="text" placeholder="Masukkan nama disini" id="Nama" name="Nama">
 			</div>
 			<div>
-				<label for="email">E-Mail :</label><input type="email" placeholder="Masukkan E-mail disini" id="email">
+				<label for="email">E-Mail :</label><input type="email" placeholder="Masukkan E-mail disini" id="email" name="email">
 			</div>
 			<div>
-				<label for="pesan">Pesan : </label><textarea cols="30" rows="5" id="pesan"></textarea >
+				<label for="pesan">Pesan : </label><textarea cols="30" rows="5" id="pesan" name="pesan"></textarea>
 			</div>
+
+			<!-- <div>
+				<label for="subject">Subject:</label>
+				<select id="subject">
+					
+					<optgroup label="Seputar Barang">
+						<option value="Pengembalian">Pengembalian barang</option>
+						<option value="Salah_barang">Salah barang</option>
+					</optgroup>
+					<optgroup label="Seputar Pengantaran">
+						<option value="delivery_info">Info Pengantaran</option>
+						<option value="Lacak_barang">Melacak Barang</option>
+					</optgroup>
+					<optgroup label="Lainnya">
+						<option value="nasihat">Nasihat</option>
+						<option value="Lainnya">Lainnya</option>
+					</optgroup>
+					
+				</select>		
+			</div> -->
+
+			<div>
+				<label for="subject">Subject:</label>
+				<input type="text" list="subjects" id="subject" placeholder="Masukkan Subject">
+
+				<datalist id="subjects">
+					<option value="Pengembalian">
+					<option value="Salah barang">
+					<option value="Info Pengantaran">
+					<option value="Melacak Delivery">
+					<option value="Nasihat">
+					<option value="Lainnya">
+				</datalist>
+			</div>
+
 			<div>
 				<p>Ikuti kami untuk update terus tawaran kita</p>
 				
@@ -90,9 +127,27 @@
 				<input type="radio" id="email" name="Respon">
 
 			</div>
+
+			<div>
+				<input type="Submit">
+				<input type="reset">
+				<!-- <button type="submit">Kirim Pesan</button> -->
+			</div>
 			
 
 		</form>
+
+		<iframe
+		  width="600"
+		  height="450"
+		  style="border:0"
+		  loading="lazy"
+		  allowfullscreen
+		  referrerpolicy="no-referrer-when-downgrade"
+		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCMU0XJRiwTD-YVOKhjyS1ueyctVJM-IyA
+		  &q=Space+Needle,Seattle+WA">
+		</iframe>
+
 </main>	
 	
 <footer>
