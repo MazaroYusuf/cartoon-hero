@@ -1,0 +1,75 @@
+html {
+		background: lightgray;
+	}
+
+body {
+		font-family: 'Sawarabi Gothic', sans-serif;
+		background: whitesmoke;
+		max-width: 1500px;
+		margin-left: 20px;
+		margin-right: 20px;		
+	}
+
+header, footer {
+		background: #00b300;
+		color: White;
+	}
+
+
+
+#Nama {
+	background: lightgray;
+}
+
+#email {
+	background: lightgray;
+}
+
+#pesan {
+	background: lightgray;
+}
+
+.Produk {
+	border: 1px solid lightgray;
+	width: 300px;
+	overflow: hidden;
+	margin: 5px;
+	padding: 5px;
+	display: inline-block;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	margin: 0;
+}
+
+header li {
+	background-color: lightgray;
+	color: lightgray;
+	display: inline;
+}
+
+header h1, nav {
+	display: inline-block;
+}
+
+main {
+	margin-top: 50px;
+	margin-left: 130px;
+	max-width: 1000px;
+	display: inline-block;
+}
+
+aside {
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.moreinfo {
+	padding: 40px;
+	display: inline-block;
+}
