@@ -14,6 +14,7 @@ body {
 header, footer {
 		background: #00b300;
 		color: White;
+		padding: 10px;
 	}
 
 
@@ -31,11 +32,12 @@ header, footer {
 
 .Produk {
 	box-sizing: content-box;
-	border: 1px solid lightgray;
+	border: 1px solid black;
 	width: 250px;
 	overflow: hidden;
 	padding: 5px;
 	display: inline-block;
+	text-align: center;
 }
 
 .nav {
@@ -62,6 +64,23 @@ li {
 
 header h1, nav {
 	display: inline-block;
+}
+
+header h1 {
+	width: 70%;
+}
+/*header nav {*/
+	float: right;
+	position: relative;
+	top: 33px;
+	right: 220px;
+}
+
+.searchbar {
+	float: right;
+	position: relative;
+	top: 33px;
+	left: 150px;
 }
 
 main {
@@ -100,7 +119,7 @@ a:hover {
 	color: purple;
 }
 
-p:first-of-type {
+p:nth-last-of-type(2) {
 	color: green;
 }
 
@@ -130,4 +149,65 @@ p:first-of-type {
 #Pdetailproduk {
 	padding-left: 405px;
 	height: 200px;
+}
+
+.textkontak {
+	color: black;
+}
+
+aside h2 {
+	margin-left: 10px;
+}
+
+table {
+	max-width: 454.41px;
+	width: 1100px;
+	display: inline-block;
+	text-align: center;
+
+}
+
+th, td {
+	padding: 2px 2px;
+}
+
+tr:hover {
+	background: lightgray;
+}
+
+.caption {
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	max-width: 454.41px;
+	text-align: center;	
+	border-bottom: 1px dotted;
+}
+
+/* kontak kami */
+
+form {
+	padding: 10px;
+	margin: 10px 0;
+	height: 600px;
+}
+
+form > div {
+	margin: 10px;
+}
+
+.h2kontakkami {
+	padding-left: 0px;
+}
+
+.NEMS label {
+	display: inline-block;
+	width: 200px;
+}
+
+input[type="text"], input[type="email"], textarea {
+	padding: 10px;
+	width: 400px;
+	margin-left: 25px;
 }

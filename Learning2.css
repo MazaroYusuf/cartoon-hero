@@ -1,0 +1,89 @@
+body {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+/*Header CSS*/
+
+#header {
+	width: inherit;
+	background: green;
+	vertical-align: top;
+	position: sticky;
+	top: 0;
+}
+
+header {
+}
+
+.LinkHeaderToko {
+	background: black;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: None;
+	color: white;
+}
+
+.HeaderToko {
+	vertical-align: top;
+	text-align: center;
+	margin: 0 auto;
+	text-decoration: None;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+
+hr {
+	border: solid darkgreen;
+	margin: 0px;
+}
+
+ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin: 2px;
+}
+
+.Anav {
+	padding: 0px 3px 0px 3px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+	background: none;
+}
+
+.navigation {
+	list-style-type: none;
+}
+
+.Anav:hover {
+	background: none;
+}
+
+.searchbar {
+	outline: none;
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	margin-bottom: 2px;
+
+}
+
+.SearchDiv {
+	width: 100%;
+	text-align: center;
+}
+
+.KategoriDataList {
+	display: inline-block;
+}
+
+
+
