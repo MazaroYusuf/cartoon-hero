@@ -1,5 +1,4 @@
 body {
-	width: 100%;
 	margin: 0 auto;
 	font-family: 'Sawarabi Gothic', sans-serif;
 }
@@ -14,19 +13,18 @@ body {
 	top: 0;
 }
 
-header {
-}
-
-.LinkHeaderToko {
-	background: black;
-	border-radius: 10px;
-	padding-left: 5px;
-	padding-right: 5px;
+#header h1 {
+	vertical-align: top;
+	text-align: center;
+	margin: 0 auto;
 	text-decoration: None;
 	color: white;
+	padding-top: 5px;
+	padding-bottom: 3px;
+
 }
 
-.HeaderToko {
+#header h1 a {
 	vertical-align: top;
 	text-align: center;
 	margin: 0 auto;
@@ -42,7 +40,6 @@ hr {
 }
 
 ul {
-	text-align: center;
 	padding: 0;
 	margin: 0;
 }
@@ -51,7 +48,11 @@ li {
 	margin: 2px;
 }
 
-.Anav {
+.navigation ul {
+	text-align: center;
+}
+
+.navigation li a {
 	padding: 0px 3px 0px 3px;
 	border-radius: 5px;
 	text-decoration: none;
@@ -59,11 +60,14 @@ li {
 	background: none;
 }
 
-.navigation {
+
+.navigation li {
 	list-style-type: none;
+	width: max-content;
+	display: inline-block;
 }
 
-.Anav:hover {
+.anav:hover {
 	background: none;
 }
 
@@ -76,14 +80,111 @@ li {
 
 }
 
-.SearchDiv {
+.searchDiv {
 	width: 100%;
 	text-align: center;
 }
 
-.KategoriDataList {
+.kategoriDataList {
 	display: inline-block;
 }
 
+/*Footer Css*/
+
+footer {
+	background: green;
+}
+
+.navigationfooter {
+	text-align: center;
+}
+
+.navigationfooter:hover {
+	background: none;
+}
+
+.navigationfooter ul {
+	display: inline-block;
+	text-decoration: mone;
+}
+
+.navigationfooter li {
+	width: max-content;
+	display: inline-block;
+}
+
+.navigationfooter a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Produk Css (class.produk) */
+
+.produk {
+	box-sizing: border-box;
+	border: 1px solid;
+	max-width: 100%;
+	display: inline-block;
+	margin: 0;
+}
+
+.produk h3 {
+	--max-lines: 1;
+	overflow: hidden;
+	margin: 2px 0px 0px 2px;
+	width: 58.9%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: var(--max-lines);
+}
+
+.produk img {
+	margin: 2px 0px 0px 2px;
+	width: 40%;
+	height: 40%;
+	float: left;
+}
+
+.produk p {
+
+}
+/*contoh webkit*/
+.produkdesk {
+	--max-lines: 5;
+	overflow: hidden;
+	margin: 2px 0px 0px 2px;
+	width: 58.9%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: var(--max-lines)
+}
+
+br {
+
+}
+
+.produkharga {
+	--max-lines: 1;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: var(--max-lines);
+	margin: 3px 0px 3px 0px;
+	text-align: center;
+}
+
+.produkinfo {
+	float: left;
+	text-decoration: none;
+	margin: 0px 0px 3px 3px;
+	background-color: skyblue;
+	padding: 0px 3px;
+	border-radius: 5px;
+}
+
+.produkkeranjang {
+	float: right;
+	margin: 0px 3px 3px 0px;
+}
 
 

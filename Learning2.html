@@ -9,41 +9,101 @@
 <body>
 	<header id="header">
 		<div>
-			<h1 class="HeaderToko"><a href="Learning2.html" class="LinkHeaderToko">Toko Berkah</a></h1>
+			<h1><a href="Learning2.html">Toko Berkah</a></h1>
 		</div>
 		<hr>
-		<nav>
-			<ul class="navigation">
-				<li><a href="Learning2.html" class="Anav">Home</a></li>
-				<li><a href="#toko" class="Anav">Toko</a></li>
-				<li><a href="#kontak" class="Anav">kontak kami</a></li>
+		<nav class="navigation">
+			<ul>
+				<li><a href="Learning2.html">Home</a></li>
+				<li><a href="#toko">Toko</a></li>
+				<li><a href="#kontak">kontak kami</a></li>
 			</ul>
 		</nav>
-		<div class="SearchDiv">
-			<input type="search" placeholder="SearchBox" class="searchbar">
-			
-			<input type="text" list="subjects" id="subject" placeholder="Kategori" style="text-align: center;">
-
-				<datalist id="subjects">
-					<option value="Pengembalian">
-					<option value="Salah barang">
-					<option value="Info Pengantaran">
-					<option value="Melacak Delivery">
-					<option value="Nasihat">
-					<option value="Lainnya">
-				</datalist>
-		</div>
+		<form>
+			<div class="searchDiv">
+				<input type="search" placeholder="SearchBox" class="searchbar">
+				<select id="kategori">
+						<option value="kategorisemua" selected>Kategori : Semua</option>
+					<optgroup label="Makanan Ringan">
+						<option value="Chips and Sweets">Chips and Sweets</option>
+					</optgroup>		
+					<optgroup label="Makanan Berat">
+						<option value="Paket Bento">Paket Bento</option>
+						<option value="Nasi Padang">Nasi Padang</option>
+					</optgroup>
+					<optgroup label="Bahan Makanan">
+						<option value="Minyak Goreng">Minyak Goreng</option>
+						<option value="Bumbu Masak">Bumbu Masak</option>
+					</optgroup>	
+					<option value="Other">Other</option>
+				</select>	
+			</div>
+		</form>
 
 	</header>
 
 	<main>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus nisl sit amet nulla tincidunt, ac laoreet arcu fringilla. Maecenas maximus porttitor fringilla. Suspendisse a nisl non tellus volutpat fringilla. Maecenas ut lacinia purus. Cras posuere tellus vitae nibh luctus tempor. Sed ante dolor, suscipit at eleifend in, hendrerit at tortor. Maecenas blandit, orci et volutpat condimentum, nisi orci porta erat, sit amet faucibus elit ipsum vitae elit. Ut tincidunt semper mi, vitae auctor risus interdum at. Vivamus at fringilla ante, non molestie erat. Maecenas egestas tellus vestibulum turpis aliquet, in eleifend quam ullamcorper. Pellentesque a nisi eget felis dapibus pharetra sit amet in ipsum. Cras tempus non lacus non dapibus. Duis pharetra ac nisi sed consectetur.
-		</p>
-		<p>
-			Proin imperdiet dapibus imperdiet. Aenean augue nibh, tincidunt vel libero vel, vestibulum ornare dolor. Praesent quis ex eget dolor pretium dictum faucibus ut arcu. Suspendisse euismod orci id arcu molestie ullamcorper. Aliquam massa mi, condimentum in urna non, consequat eleifend risus. Morbi cursus, nulla ac dignissim molestie, augue urna lobortis leo, vel vulputate nisi diam vitae sapien. Donec suscipit magna sit amet venenatis fringilla. Praesent ullamcorper tincidunt enim, in malesuada purus sollicitudin eget. Aenean dapibus elementum dolor at maximus. Etiam sit amet mattis quam, quis ullamcorper erat. Nunc sed ipsum nec leo accumsan semper. Nulla facilisi. Aenean porta justo vel nulla convallis molestie. Donec vestibulum pharetra ante quis convallis. Etiam ultrices elit a lectus semper pellentesque.
-		</p>
+		<!-- 
+		Later add price list -->
+		<div>
+			<div class="produk">
+				<a href="img/Momogi.png">
+					<img img src="img/Momogi.png">
+				</a>
+				<h3>Momogi rasa jagung</h3>
+				<p class="produkdesk">Momogi adalah makan kesukaan semua orang kalian bisa membeli nya dengan harga yang sangat murah di toko berkah silahkan diorder kak,makasih!. asdjgjaks gj;la g hkasas lkha glahg lash glas hglas hglas hglas hglha gl sgla shgla hglk hal</p>
+				<br>
+				<p class="produkharga">Rp 2.000.000.000.000.000.000</p>
+				<a target="_blank" href="" class="produkinfo">info produk</a>
+				<button href="" class="produkkeranjang">+ Keranjang</button>
+			</div>
+			<div class="produk">
+				<a href="img/Momogi.png">
+					<img img src="img/Momogi.png">
+				</a>
+			</div>
+			<div class="produk">
+				<a href="img/Momogi.png">
+					<img img src="img/Momogi.png">
+				</a>
+			</div>
+			<div class="produk">
+				<a href="img/Momogi.png">
+					<img img src="img/Momogi.png">
+				</a>
+			</div>
+			<div class="produk">
+				<a href="img/Momogi.png">
+					<img img src="img/Momogi.png">
+				</a>
+			</div>
+			<div class="produk">
+				<a href="img/Momogi.png">
+					<img img src="img/Momogi.png">
+				</a>
+			</div>
+			<div class="produk">
+				<a href="img/Momogi.png">
+					<img img src="img/Momogi.png">
+				</a>
+			</div>
+			<div class="produk">
+				<a href="img/Momogi.png">
+					<img img src="img/Momogi.png">
+				</a>
+			</div>
+		</div>
 	</main>
+
+	<footer>
+		<nav class="navigationfooter">
+			<ul>
+				<li><a href="Learning2.html">Home</a></li>
+				<li><a href="#toko">Toko</a></li>
+				<li><a href="#kontak">kontak kami</a></li>
+			</ul>
+		</nav>
+	</footer>
 
 </body>
 </html>

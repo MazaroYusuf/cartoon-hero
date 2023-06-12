@@ -135,6 +135,9 @@ p:nth-last-of-type(2) {
 
 /* Detail Produk */
 
+div h3 {
+	margin: 0;
+}
 .Detailproduk {
 	width: 1100px;
 	height: 600px;
