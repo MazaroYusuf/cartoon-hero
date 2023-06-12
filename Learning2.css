@@ -128,7 +128,7 @@ footer {
 	margin: 0;
 }
 
-.produk h3 {
+.produk > h3  {
 	--max-lines: 1;
 	overflow: hidden;
 	margin: 2px 0px 0px 2px;
@@ -136,6 +136,11 @@ footer {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: var(--max-lines);
+}
+
+.produk > h3 > a {
+	text-decoration: none;
+	color: black;
 }
 
 .produk img {
