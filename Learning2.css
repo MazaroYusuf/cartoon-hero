@@ -1,3 +1,8 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	margin: 0 auto;
 	font-family: 'Sawarabi Gothic', sans-serif;
@@ -81,18 +86,30 @@ li {
 }
 
 .searchDiv {
-	width: 100%;
 	text-align: center;
+	width: fit-content;
+	display: inline-block;
+	margin: 0px 0px 0px 5px;
 }
 
-.kategoriDataList {
+.mobile_kategori_div {
+	width: fit-content;
+	margin: 0px 5px 0px 0px;
 	display: inline-block;
+	float: right;
 }
+
+
 
 /*Footer Css*/
 
 footer {
 	background: green;
+	display: inline-block;
+ 	position: fixed;
+	width: 100%;
+  	bottom: 0px;
+ 	left: 0px;
 }
 
 .navigationfooter {
@@ -120,12 +137,18 @@ footer {
 
 /* Produk Css (class.produk) */
 
+main {
+	padding-bottom: 27px;
+	text-align: center;
+
+}
 .produk {
+	background: lightgray;
 	box-sizing: border-box;
 	border: 1px solid;
 	max-width: 100%;
 	display: inline-block;
-	margin: 0;
+	margin: 2px 2px;
 }
 
 .produk > h3  {
@@ -136,6 +159,7 @@ footer {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: var(--max-lines);
+	text-align: center;
 }
 
 .produk > h3 > a {
@@ -146,7 +170,7 @@ footer {
 .produk img {
 	margin: 2px 0px 0px 2px;
 	width: 40%;
-	height: 40%;
+	max-height: 40%;
 	float: left;
 }
 
@@ -155,6 +179,7 @@ footer {
 }
 /*contoh webkit*/
 .produkdesk {
+	text-align: left;
 	--max-lines: 5;
 	overflow: hidden;
 	margin: 2px 0px 0px 2px;
@@ -185,11 +210,95 @@ br {
 	background-color: skyblue;
 	padding: 0px 3px;
 	border-radius: 5px;
+	font-weight: bold;
 }
 
 .produkkeranjang {
 	float: right;
 	margin: 0px 3px 3px 0px;
+	font-weight: bold;
+}
+
+
+/* 768 width responsive web */
+
+@media only screen and (min-width: 768px) {
+	
+	.produk {
+		background: lightgray;
+		box-sizing: border-box;
+		border: 1px solid;
+		width: 400px;
+		height: 265px;
+		display: inline-block;
+		margin: 2px 2px;
+	}
+	
+	.produk > h3  {
+		--max-lines: 1;
+		overflow: hidden;
+		margin: 2px 0px 0px 2px;
+		width: 190px;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: var(--max-lines);
+		text-align: center;
+	}
+	
+	.produk > h3 > a {
+		text-decoration: none;
+		color: black;
+	}
+	
+	.produk img {
+		margin: 2px 0px 0px 2px;
+		width: 200px;
+		height: 200px;
+		max-height: 400px;
+		object-fit: fill;
+		margin: auto;
+	}
+	
+	/*contoh webkit*/
+	.produkdesk {
+		text-align: left;
+		--max-lines: 5;
+		overflow: hidden;
+		margin: 2px 0px 0px 2px;
+		width: 190px;
+		height: 164px;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: var(--max-lines)
+	}
+	
+	br {
+	
+	}
+	
+	.produkharga {
+		--max-lines: 1;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: var(--max-lines);
+		margin: 3px 0px 3px 0px;
+		text-align: center;
+	}
+	
+	.produkinfo {
+		text-decoration: none;
+		margin: 0px 0px 3px 3px;
+		background-color: skyblue;
+		padding: 0px 3px;
+		border-radius: 5px;
+		font-weight: bold;
+	}
+	
+	.produkkeranjang {
+		margin: 0px 3px 3px 0px;
+		font-weight: bold;
+	}
 }
 
 

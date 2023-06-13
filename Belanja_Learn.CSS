@@ -1,0 +1,71 @@
+html {
+    height: auto;
+    width: auto;
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    margin-top: 0;
+}
+
+.topnav {
+    vertical-align: top;
+    position: block;
+    text-align: right;
+    background-color: lightgray;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.topnav a {
+    margin-left: 15px;
+    text-decoration: none;
+    margin-right: 15px
+}
+
+.headerdiv {
+    display: flex;
+    background: green;
+}
+
+.h1div {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.headerkategoridiv {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.searchdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.searchdiv > label {
+    width: 90%;
+}
+.searchbox {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.buttondiv {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
