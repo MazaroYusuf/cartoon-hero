@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kontak</title>
+    </head>
+    <body>
+        <div>
+            <h1>Tech Store</h1>
+            <nav>
+                <ul>
+                    <li><a target="_blank" href="http://127.0.0.1:5500/2ndFront.html">Home</a></li>
+                    <li><a target="_blank" href="">Shop</a></li>
+                    <li><a target="_blank" href="kontak.html">Hubungi kami!</a></li>
+                </ul>    
+            </nav> 
+            <input type="search" placeholder="cari...">  
+        </div>
+        <aside>
+            <h2>Shop By</h2>
+            <section>
+                <h3>Kategori</h3>
+                <hr>
+                <ul>
+                    <li>Semua</li>
+                    <li>Kontroller</li>
+                    <li>Handphone</li>
+                    <li>Laptop</li>
+                    <li>Mouse</li>
+                    <li>Keyboard</li>
+                    <li>Kamera</li>
+                </ul>    
+            </section>
+            <section>
+                <h3>Harga (Rp)</h3>
+                <hr>
+                <ul>
+                    <li>Rp. 0 - 100K</li>
+                    <li>Rp. 100K - 200K</li>
+                    <li>Rp. 200K - 500K</li>
+                    <li>Rp. 500K - 1Juta</li>
+                    <li>Rp. 1Juta+</li>
+                </ul>     
+            </section>    
+        </aside>
+        <!-- Main -->
+        <main>
+            <h2>Hubungi kami!</h2>
+            <form>
+                <div>
+                    <label for="nama">Nama :</label><input type="text" placeholder="Masukkan nama kamu disini" id="nama" name="nama">
+                </div>
+                <div>
+                    <label for="email">Email :</label><input type="email" placeholder="Masukkan Email kamu disini" id="email" name="email">
+                </div>
+                <div>
+                    <label for="pesan">Pesan :</label><textarea cols="30" rows="5" id="pesan" name="pesan"></textarea>
+                </div>
+                <!-- <div>
+                    <label for="subjek">Subjek :</label>
+                    <select id="subjek">
+                        <optgroup label="Produk">
+                            <option value="pengembalian">Pengembalian</option>
+                            <option value="salahpesanan">Salahpesanan</option>   
+                        </optgroup>
+                        <optgroup label="Pengantaran">
+                            <option value="pengantaran">Pengantaran</option>
+                            <option value="lacakpengantaran">Lacak Pengantaran</option>
+                        </optgroup>
+                        <optgroup label="Lainnya">
+                            <option value="saran">Saran</option>
+                            <option value="lainnya">Lainnya</option>
+                        </optgroup>  
+                    </select>
+                </div> -->
+                <div>
+                    <label for="subjek">Subjek :</label>
+                    <input type="text" list="subjeklist" id="subjek" placeholder="Masukkan tujuan disini">
+                    <datalist id="subjeklist">
+                        <option value="pengembalian">
+                        <option value="salahpesanan">
+                        <option value="pengantaran">
+                        <option value="lacak pengantaran">
+                        <option value="saran">
+                        <option value="lainnya">
+                    </datalist>
+                </div>
+                <div>
+                    <p>Ikuti kami untuk menerima update terbaru!</p>
+                    <label for="suratkabar">Surat Kabar</label>
+                    <input type="checkbox" id="suratkabar" name="ikuti" value="suratkabar">
+                    <label for="email">Email</label>
+                    <input type="checkbox" id="email" name="ikuti" value="email">
+                    <label for="pos">Pos</label>
+                    <input type="checkbox" id="pos" name="ikuti" value="pos">
+                </div> 
+                <div>
+                    <p>Anda mau direspon lewat apa?</p>
+                    <label for="sms">SMS</label>
+                    <input type="radio" id="sms" name="respon" value="sms">
+                    <label for="email">Email</label>
+                    <input type="radio" id="email" name="respon" value="email">
+                </div> 
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                    <!-- <button type="submit">Kirim</button> -->
+                </div>
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11382.607656292537!2d106.82681793998323!3d-6.175830901413887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1686671826040!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe> 
+        </main>
+        <!--  -->
+        <footer>
+            <nav>
+                <ul>
+                    <li><a target="_blank" href="http://127.0.0.1:5500/2ndFront.html">Home</a></li>
+                    <li><a target="_blank" href="">Shop</a></li>
+                    <li><a target="_blank" href="kontak.html">Hubungi kami!</a></li>
+                </ul>    
+            </nav>   
+        </footer>
+    </body>
+</html>    
