@@ -1,0 +1,77 @@
+html {
+    background: black;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: rgb(49,46,46);
+}
+header, footer {
+    background: mediumseagreen;
+    color: whitesmoke;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    line-height: 30px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: rgb(7, 59, 139);
+}
+header li {
+    display: inline;
+}
+header h1, nav {
+    display: inline-block;
+}
+main {
+    width: 680px;
+    display: inline-block;
+    padding: 10px;
+}
+aside {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+.produkdiv {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+}
+.tombol {
+    padding: 10px;
+    display: inline-block;
+}
+.tombol:last-of-type {
+    background-color: rgb(31, 56, 31);
+    color: rgb(5, 170, 5);
+}
+.produkdiv p:first-of-type {
+    color: rgb(5, 170, 5);
+}
+/* Produk detail Div */
+.produk_detail_div {
+    width: 660px;
+    border: 1px solid;
+}
+.produk_detail_div img {
+    max-width: 50%;
+    float: left;
+}
