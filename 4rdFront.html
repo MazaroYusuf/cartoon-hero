@@ -45,8 +45,8 @@
             /* grid-row: 4/6;
             grid-column: 3/5; */
             grid-area: 3/3/5/5;
-        } --> 
-<style>
+        } -->
+<!-- <style>
     #container {
         display: grid;
         background: lightgreen;
@@ -93,6 +93,83 @@
         grid-row: footer;
         grid-column: footer;
     }
+</style> */
+<style>
+    #container {
+        display: grid;
+        background: lightgreen;
+        grid-template-areas: "header header header"
+                             "aside content aside"
+                             "footer footer footer";
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-gap: 10px;                     
+    }
+    header, main, aside, footer {
+        border: 1px dotted;
+    }
+    header {
+        grid-column: header;
+        grid-row: header;
+    }
+    main {
+        grid-column: content;
+        grid-row: content;
+        display: grid;
+    }
+    aside {
+        grid-column: sidebar;
+        grid-row: sidebar;
+    }
+    footer {
+        grid-column: footer;
+        grid-row: footer;
+    }
+</style> -->
+<style>
+    body {
+        height: 750px;
+    }
+    #container {
+        display: grid;
+        background-color: white;
+        grid-template-areas: "header header header"
+                             "leftside content rightside"
+                             "footer footer footer" ;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 100px 1000px 100px;
+        grid-gap: ;
+    }
+    header, .leftside, main, .rightside, footer {
+        border: 1px dotted;
+        box-sizing: border-box;
+    }
+    header {
+        grid-column: header;
+        grid-row: header;
+    }
+    main {
+        grid-column: content;
+        grid-row: content;
+        height: 1000px;
+        width: 100%;
+    }
+    .leftside {
+        grid-column: leftside;
+        grid-row: leftside;
+        height: 1000px;
+        width: 100%;
+    }
+    .rightside {
+        grid-column: rightside;
+        grid-row: rightside;
+        height: 1000px;
+        width: 100%;
+    }
+    footer {
+        grid-column: footer;
+        grid-row: footer;
+    }
 </style>
 </head>
 <body id="container">
@@ -111,7 +188,8 @@
                 <div class="item">11</div>
                 <div class="item">12</div>
             </main>
-        <aside>Sidebar</aside>
+        <aside class="leftside">left side</aside>
+        <aside class="rightside">right side</aside>
         <footer>Footer</footer>  
 </body>
 </html>
