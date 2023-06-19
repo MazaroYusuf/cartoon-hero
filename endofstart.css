@@ -78,6 +78,11 @@ body {
 .carouselinner {
     height: 20%;
 }
+.carousel-item img {
+    aspect-ratio: 17/5;
+    height: 15%;
+    object-fit: contain;
+}
 .promoheader {
     display: flex;
     justify-content: center;
@@ -227,6 +232,10 @@ footer {
 
     }
     /* promo */
+    .carousel-item img {
+        aspect-ratio: 16/6;
+        height: 15%;
+    }
     .promo_product_div {
         display: inline;
     }
