@@ -16,7 +16,7 @@ header {
     flex-direction: row;
     background-color: rgb(47, 48, 47);
     height: 100px;
-    z-index: 2;
+    z-index: 1;
 
 }
 .h1_div {
@@ -51,7 +51,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 .nav_list {
     list-style-type: none;
@@ -64,6 +64,11 @@ header {
     color: white;
     padding-left: 5px;
     padding-right: 5px;
+}
+.registerbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Body */
 body {
@@ -261,7 +266,7 @@ footer {
         justify-content: space-around;
     }
     .promo_product_div {
-        display: inline;
+        display: inline-block;
     }
     .promo_product {
         padding-top: 10px;
